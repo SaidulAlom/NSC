@@ -9,6 +9,7 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Sports from "./components/Sports/Sports";
+import Form from "./components/Form/Form";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <About />
       <Contact />
       <Footer />
+      <Form />
     </div>
   );
 }
