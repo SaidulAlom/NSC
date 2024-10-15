@@ -1,0 +1,73 @@
+/* Navbar.css */
+.navbar {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center; /* Center align items */
+  background-color: #0033cc; /* Navbar background color */
+  padding: 10px 20px; /* Padding for navbar */
+  position: relative; /* Position relative for absolute positioning of menu */
+  z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Center logo and text */
+  color: white; /* Logo text color */
+}
+
+.logo-img {
+  width: 40px; /* Logo image size */
+  margin-right: 10px; /* Space between image and text */
+}
+
+.nav-links {
+  list-style-type: none; /* Remove bullet points */
+  display: flex; /* Flexbox for links */
+  gap: 20px; /* Space between links */
+}
+
+.nav-links li {
+  margin: 0; /* Remove margin */
+}
+
+.nav-links a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none; /* Hide hamburger by default */
+  cursor: pointer; /* Pointer cursor for clickable */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute; /* Position absolutely for mobile */
+    top: 35px; /* Adjust this to move it slightly down */
+    right: -300px; /* Start hidden off-screen */
+    height: calc(40vh - 20px); /* Full height minus the top margin */
+    width: 150px; /* Width of menu */
+    background-color: rgba(101, 123, 190, 0.8); /* Semi-transparent background color */
+    flex-direction: column; /* Stack links vertically */
+    justify-content: center; /* Center links */
+    transition: right 0.3s ease; /* Transition for sliding */
+    opacity: 1; /* Ensure the menu is fully opaque */
+    border-top-left-radius: 20px; /* Curvy edge at the top left */
+    border-bottom-left-radius: 20px; /* Curvy edge at the bottom left */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth */
+  }
+  
+  
+
+  .nav-links.open {
+    right: 0; /* Slide in from the right when open */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon on mobile */
+    color: white; /* Hamburger color */
+  }
+}

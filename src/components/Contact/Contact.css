@@ -1,0 +1,83 @@
+.contact {
+  background-color: #e3f2fd; /* Light blue background for the contact section */
+  padding: 40px; /* Add padding around the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px; /* Maximum width for the contact form */
+  margin: 20px auto; /* Center the section */
+  text-align: center; /* Center align text */
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(20px); /* Slide in from below */
+  }
+  to {
+    opacity: 1; /* End with full opacity */
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+.contact h2 {
+  color: #1976d2; /* Dark blue for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+.contact p {
+  color: #555; /* Darker color for the paragraph text */
+  margin: 10px 0; /* Space around paragraphs */
+}
+
+.contact form {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack form elements vertically */
+  align-items: center; /* Center form elements */
+}
+
+.contact label {
+  align-self: flex-start; /* Align labels to the left */
+  margin-bottom: 5px; /* Space below labels */
+  color: #555; /* Darker color for labels */
+}
+
+.contact input,
+.contact textarea {
+  width: 100%; /* Full width inputs and textarea */
+  padding: 10px; /* Padding inside input fields */
+  margin-bottom: 15px; /* Space below each field */
+  border: 1px solid #1976d2; /* Light blue border for inputs */
+  border-radius: 5px; /* Rounded corners for inputs */
+  font-size: 16px; /* Font size for input text */
+  color: #333; /* Dark color for input text */
+  transition: border-color 0.3s ease; /* Transition for border color on focus */
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #0d47a1; /* Darker blue on focus */
+  outline: none; /* Remove outline */
+}
+
+.contact textarea {
+  resize: none; /* Prevent resizing */
+  height: 100px; /* Set a fixed height for the textarea */
+}
+
+.contact button {
+  background-color: #1976d2; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Padding inside button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Change cursor to pointer */
+  font-size: 16px; /* Font size for button text */
+  transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+.contact button:hover {
+  background-color: #0d47a1; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}

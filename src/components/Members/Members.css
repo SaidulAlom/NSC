@@ -1,0 +1,54 @@
+.members-container {
+  display: flex; /* Use Flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping to new rows */
+  justify-content: space-around; /* Space out items evenly */
+  padding: 20px; /* Add padding around the container */
+  background-color: #e6f7ff; /* Light blue background color for the container */
+}
+
+.member-card {
+  width: 100%; /* Full width for each card */
+  max-width: 250px; /* Maximum width of each card */
+  margin: 10px; /* Margin between cards */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6ec1e4, #ffffff); /* Gradient background from light blue to white */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly softer shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+}
+
+.member-card:hover {
+  transform: scale(1.05) translateZ(0); /* Scale card on hover without affecting layout */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+.member-image {
+  width: 150px; /* Increased width of the image */
+  height: 150px; /* Increased height of the image */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+h3 {
+  color: #34495e; /* Dark slate gray for member names */
+  font-size: 1.5em; /* Increase font size */
+  margin: 10px 0; /* Margin above and below */
+}
+
+.designation {
+  color: #2980b9; /* Blue for designations */
+  font-weight: bold; /* Bold text for designation */
+  font-size: 0.9em; /* Slightly smaller font size */
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .members-container {
+    justify-content: space-between; /* Adjust spacing for larger screens */
+  }
+}

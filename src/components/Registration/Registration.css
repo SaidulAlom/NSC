@@ -1,0 +1,39 @@
+.registration {
+  background-color: #f7fafc; /* Light grey background */
+  padding: 40px 20px; /* Padding around the section */
+  text-align: center; /* Center-align all text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 30px 0; /* Space around the section */
+}
+
+.registration h2 {
+  font-size: 2.5em; /* Large font size for the heading */
+  color: #4caf50; /* Green heading color */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.registration p {
+  color: #333; /* Darker gray for the paragraph text */
+  font-size: 1.2em; /* Increased font size for better readability */
+  line-height: 1.5; /* Better line spacing for readability */
+  max-width: 800px; /* Limit the width of the paragraph */
+  margin: 0 auto; /* Center the paragraph */
+  text-align: justify;
+}
+
+.registration .btn {
+  display: inline-block;
+  padding: 15px 30px; /* Padding for the button */
+  background-color: #4caf50; /* Green button background */
+  color: #fff; /* White text color */
+  font-size: 1.2em; /* Larger text size for the button */
+  border-radius: 8px; /* Rounded corners for the button */
+  text-decoration: none; /* Remove default link underlining */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.registration .btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}

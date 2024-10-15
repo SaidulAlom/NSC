@@ -1,0 +1,43 @@
+.events {
+  background-color: #f0f4c3; /* Light lime background for the events section */
+  padding: 20px; /* Add padding around the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin: 20px 0; /* Space above and below the section */
+  text-align: center; /* Center align text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.events h2 {
+  color: #a6d485; /* Darker green for the heading */
+  font-size: 2em; /* Larger font size for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+.events ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0;
+}
+
+.events li {
+  background-color: #c5be80; /* Soft yellow background for each list item */
+  margin: 16px 0; /* Reduced space between list items */
+  padding: 20px 40px; /* Reduced padding inside each list item */
+  border-radius: 8px; /* Rounded corners for list items */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for list items */
+  transition: transform 0.2s, background-color 0.2s; /* Smooth transition for hover effect */
+  font-size: 1.2em; /* Increased font size */
+  width: 80%; /* Limit the width to make the box smaller */
+  max-width: 400px; /* Ensure the box doesn't get too large on big screens */
+  text-align: center; /* Center the text inside the list item */
+}
+
+.events li:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  background-color: #ffe082; /* Change background color on hover */
+}
+

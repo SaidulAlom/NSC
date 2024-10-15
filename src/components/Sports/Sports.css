@@ -1,0 +1,106 @@
+.sports-container {
+    display: flex;
+    /* Use Flexbox for layout */
+    flex-direction: column;
+    /* Stack items in a column */
+    align-items: center;
+    /* Center items horizontally */
+    padding: 20px;
+    /* Add some padding around the container */
+    background-color: #eaf1f8;
+    /* Soft light blue background */
+}
+
+.sport-card {
+    width: 100%;
+    /* Full width for each card */
+    max-width: 300px;
+    /* Maximum width of each card */
+    margin: 15px;
+    /* Add some margin between cards */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffcccb, #ffe4e1);
+    /* Soft pink gradient */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Slightly stronger shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Smooth transitions */
+}
+
+.sport-card:hover {
+    transform: scale(1.05) translateZ(0);
+    /* Scale card on hover without affecting layout */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Stronger shadow on hover */
+}
+
+.sport-image {
+    width: 100%;
+    /* Make image responsive */
+    height: auto;
+    border-radius: 10px;
+    /* Round image corners */
+    margin-bottom: 15px;
+    /* Add space below the image */
+}
+
+h3 {
+    color: #2c3e50;
+    /* Dark blue for sport names */
+    font-size: 1.5em;
+    /* Increase font size */
+    margin: 10px 0;
+    /* Margin above and below */
+    padding: 10px;
+    /* Padding inside the heading */
+    background-color: #a8dadc;
+    /* Soft blue background for the heading */
+    border-radius: 5px;
+    /* Rounded corners for the heading background */
+}
+
+p {
+    color: #333;
+    /* Darker text for descriptions */
+    font-size: 1em;
+    /* Default font size for descriptions */
+    line-height: 1.5;
+    /* Increase line spacing for readability */
+}
+
+h4 {
+    color: #e74c3c;
+    /* Bright red for head names */
+    font-size: 1.2em;
+    /* Slightly larger font size */
+    margin: 5px 0;
+    /* Margin above and below */
+}
+
+.designation {
+    color: #8e44ad;
+    /* Purple for designations */
+    font-weight: bold;
+    /* Bold text for designation */
+    font-size: 0.9em;
+    /* Slightly smaller font size */
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .sports-container {
+        flex-direction: row;
+        /* Change to row for wider screens */
+        flex-wrap: wrap;
+        /* Allow wrapping to new rows */
+        justify-content: space-around;
+        /* Space out items evenly */
+    }
+
+    .sport-card {
+        margin: 20px;
+        /* Add more margin on larger screens */
+    }
+}
