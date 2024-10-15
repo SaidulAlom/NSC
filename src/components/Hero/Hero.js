@@ -31,7 +31,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.8 }}
           whileHover={{ scale: 1.05 }}
         >
-          <img src={FounderImg} alt="Maidul Islam" className="person-image" />
+          <img src={FounderImg} alt="Maidul Islam" className="person-image maidul" />
           <h3>Maidul Islam</h3>
           <p className="designation">Founder, Navojyoti Sports Club</p>
           <p className="message">
